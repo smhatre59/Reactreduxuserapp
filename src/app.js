@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
 //components
-import MainComponent from "./components/main.js";
+import MainComponent from "./components/Main.js";
+import store from "./store.js";
 
-ReactDOM.render(
-                <AppComponent />
-                ,document.getElementById("main")
-                );
+ReactDOM.render(<Provider store={store}>
+                <MainComponent />
+                </Provider>,document.getElementById("main"));
