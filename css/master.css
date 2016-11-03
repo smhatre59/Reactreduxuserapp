@@ -1,0 +1,20 @@
+.username {
+  margin: auto;
+  color: #658585;
+  font-size: 1.53em;
+  font-family: "Coda", sans-serif;
+  font-weight: bold;
+}
+
+.avatar {
+	padding: .7em;
+  height: 6.23em;
+  width: 6.23em;
+  border-radius: 18em;
+}
+
+.user-profile {
+  margin: auto;
+	background: #fff;
+  border-radius: .3em;
+}

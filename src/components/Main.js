@@ -19,7 +19,7 @@ export default class Main extends React.Component{
   }
 
   render(){
-    // console.log(this.props.users);
+    console.log(this.props.users);
     return (
       <div>
       <UserList users ={this.props.users}/>

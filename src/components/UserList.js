@@ -9,17 +9,19 @@ export default class UserList extends React.Component{
     }
     var userNodes = this.props.users.map(function(user){
       return (
-        <User name={user.name} email={user.email}
-        key={user.id}>
-        {user.name}
+        <User firstname={user.first_name} lastname={user.last_name}
+        key={user.id} avatar={user.avatar}>
+        {user.first_name}
         </User>
       )
     })
 
     return (
       <div>
-        <h1>Users</h1>
+        <center>
+        <h1 className="user-profile">User Profiles</h1>
         {userNodes}
+      </center>
       </div>
     )
   }
